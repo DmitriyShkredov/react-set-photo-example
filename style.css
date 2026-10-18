@@ -1,0 +1,89 @@
+body {
+  background: #f5f7fa;
+  color: #253042;
+}
+main {
+  max-width: 1140px !important;
+}
+h1 {
+  font-size: 32px;
+  letter-spacing: 0;
+}
+.demo-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #24344808;
+}
+.broken {
+  border-top: 3px solid #dc3545;
+}
+.correct {
+  border-top: 3px solid #198754;
+}
+pre {
+  background: #f1f3f5;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  min-height: 62px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  min-height: 155px;
+  align-content: start;
+}
+.gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #e9ecef;
+}
+figcaption {
+  margin-top: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.empty {
+  grid-column: 1 / -1;
+  min-height: 155px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed #ced4da;
+  border-radius: 4px;
+  color: #818b98;
+}
+.progress {
+  height: 7px;
+}
+.filename {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.file-label {
+  font-size: 12px;
+  max-width: 280px;
+}
+.toolbar {
+  border-block: 1px solid #dee2e6;
+  padding: 20px 0;
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 26px;
+  }
+  main {
+    padding-top: 28px !important;
+  }
+  .file-label {
+    max-width: 100%;
+    width: 100%;
+  }
+}
